@@ -1,0 +1,167 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+a i{
+    color: #ECDDD9;
+    font-size: 18px !important;
+}
+
+h1,h2,h3{
+    font-weight: 900;
+}
+
+h4,h5,h6{
+    font-weight: 700;
+}
+
+/*Heading section*/
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*Button section*/
+.btn{
+    border-radius: 0% !important;
+    box-shadow: none !important;
+}
+
+
+.btn-primary {
+    background-color: black !important;
+    border-color: black !important;
+}
+
+.btn-primary:hover{
+    background-color: transparent !important;
+    color: black !important;
+}
+
+.btn-outline-secondary{
+    color: white !important;
+    background-color: black !important;
+}
+
+.btn-outline-secondary:hover{
+    color: black !important;
+    background-color: white !important;
+}
+
+/*Navbar*/
+.navbar{
+    opacity: 1;
+    background-color:mistyrose;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+}
+
+.nav-link, .navbar-brand{
+    color: black;
+}
+
+/*Menu section*/
+.dropdown-menu:hover{
+    background-color:mistyrose;
+}
+
+/*Home section*/
+.home{
+    width: 100%;
+    min-height: 660px;
+    overflow: hidden;
+}
+
+
+.home .carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat ;
+    background-position: top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/*Call-to-action*/
+.call-to-action{
+    color: white;
+    background-color: black;
+}
+
+/*Product*/
+.price-tag{
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    background: black;
+    padding: 20px;
+    color: white;
+}
+
+.price{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.dollar{
+    font-size: 1.4rem;
+}
+
+.products{
+    column-count: 4;
+    column-width: 25%;
+    background-color: white;
+}
+
+.products .pics{
+    position: relative;
+}
+
+.products .pics img:hover{
+    transform: scale(1.02);
+}
+
+/*developers information*/
+.developers-image{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.developers{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/*footer section*/
+.footer{
+    background-color:whitesmoke;
+}
+
+.item {
+    margin-top: 100px;
+    height: 660px;
+}
+
+.row {
+    margin-top: 16px;
+}
+
+.checked {
+    color: orange;
+}
+
+.footer .copyright{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 900;
+}

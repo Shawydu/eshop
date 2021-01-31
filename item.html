@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EShop</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--  Font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Style CSS-->
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet"></head>
+
+<body>
+    <!--Navigation-->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a href="#" class="navbar-brand"><img src="http://placehold.it/150x50?text=Logo" alt=""></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">WOMEN</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Outerwear</a>
+                        <a href="#" class="dropdown-item">Innerwear</a>
+                        <a href="#" class="dropdown-item">Underwear</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MAN</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Outerwear</a>
+                        <a href="#" class="dropdown-item">Innerwear</a>
+                        <a href="#" class="dropdown-item">Underwear</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Kids</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Outerwear</a>
+                        <a href="#" class="dropdown-item">Innerwear</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <form class="form-inline">
+                <div class="input-group">                    
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-secondary"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <a class="nav-link btn btn-primary" href="shopping-cart.html">
+                    <i class="fa fa-shopping-cart mr-1"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container item">
+            <div class="row">
+                <div class="col-4 image">
+                    <img src="img/product-2.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="col-1"></div>
+                <div class="col-7 description">
+                    <div class="container">
+                        <div class="row">
+                            <h4 class="display-4">dress</h4>
+                        </div>
+                        <div class="row" id="category">
+                            Calvin Klein
+                        </div>
+                        <form>
+                            <div class="row">
+                                <div>size:</div>
+                                <div class="col-5">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sizeOptions" id="sizeOptionXS" value="1">
+                                        <label class="form-check-label" for="sizeOptionXS">XS</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sizeOptions" id="sizeOptionS" value="2" checked>
+                                        <label class="form-check-label" for="sizeOptionS">S</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sizeOptions" id="sizeOptionM" value="3">
+                                        <label class="form-check-label" for="sizeOptionM">M</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sizeOptions" id="sizeOptionL" value="4">
+                                        <label class="form-check-label" for="sizeOptionL">L</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>Qty</div>
+                                <div class="col-2">
+                                    <select class="form-select quantity" aria-label="Default select quantity">
+                                        <option selected>Open this select quantity</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row rating">
+                                <div>Reviews</div>
+                                <div class="col-3">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button type="submit" class="btn btn-dark col-6">Add To Bag</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer py-5">
+        <!--Developers-->
+        <section class="developers py-3">
+            <div class="container">
+                <div id="carousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img class="float-right developers-image" src="img/developers-1.jpg" alt="John">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="call-to-action-heading">Hongxin Yin</h3>
+                                    <blockquote>Student - AlgonquinCollege - Computer Programming -CST8285_300</blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img class="float-right developers-image" src="img/developers-2.jpg" alt="John">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="call-to-action-heading">Wenwen Ji</h3>
+                                    <blockquote>Student - AlgonquinCollege - Computer Programming -CST8285_300</blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img class="float-right developers-image" src="img/developers-3.jpg" alt="John">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="call-to-action-heading">Xiaomeng Xu</h3>
+                                    <blockquote>Student - AlgonquinCollege - Computer Programming -CST8285_300</blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <p class="copyright"> This website is made by Hongxin, Wenwen and Xiaomeng</p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
