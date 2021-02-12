@@ -1,3 +1,4 @@
+/* HONGXIN SECTION BEGIN */
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -28,7 +29,6 @@ h4,h5,h6{
     box-shadow: none !important;
 }
 
-
 .btn-primary {
     background-color: black !important;
     border-color: black !important;
@@ -37,6 +37,10 @@ h4,h5,h6{
 .btn-primary:hover{
     background-color: transparent !important;
     color: black !important;
+}
+
+.btn-secondary{
+    height:calc(1.5em + .75rem + 2px); 
 }
 
 .btn-outline-secondary{
@@ -59,7 +63,7 @@ h4,h5,h6{
     font-size: 2rem;
 }
 
-.nav-link, .navbar-brand{
+.nav-link{
     color: black;
 }
 
@@ -75,18 +79,13 @@ h4,h5,h6{
     overflow: hidden;
 }
 
-
 .home .carousel-item {
     height: 100vh;
     min-height: 350px;
     background: no-repeat ;
     background-position: top;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
-
 
 /*Call-to-action*/
 .call-to-action{
@@ -95,22 +94,10 @@ h4,h5,h6{
 }
 
 /*Product*/
-.price-tag{
-    position:absolute;
-    top: 20px;
-    left: 20px;
-    background: black;
-    padding: 20px;
-    color: white;
-}
-
-.price{
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.dollar{
-    font-size: 1.4rem;
+.img-fluid {
+    width: 100% !important;
+    height: 400px !important;
+    object-fit: cover !important;
 }
 
 .products{
@@ -123,28 +110,36 @@ h4,h5,h6{
     position: relative;
 }
 
+.pics{
+    position: relative;
+}
+
 .products .pics img:hover{
     transform: scale(1.02);
 }
 
-/*developers information*/
-.developers-image{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
+.price-tag{
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    background: black;
+    padding: 10px;
+    color: white;
 }
 
-.developers{
-    background-color: black;
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
+.price{
+    font-size: 2rem;
+    font-weight: 700;
 }
+
+.dollar{
+    font-size: 1.4rem;
+}
+
 
 /*footer section*/
 .footer{
-    background-color:whitesmoke;
+    background-color:black;
 }
 
 .item {
@@ -160,8 +155,102 @@ h4,h5,h6{
     color: orange;
 }
 
+
 .footer .copyright{
     text-align: center;
     font-size: 12px;
     font-weight: 900;
+    color: white;
 }
+
+/* HONGXIN SECTION END */
+
+/* XIAOMENG SECTION  BEGIN */
+.search{
+	column-count: 3;
+    column-width: 100px;    
+    background-color: white;
+}
+
+.search .pics{
+    position: relative;
+}
+
+.search .pics img:hover{
+    transform: scale(1.02);
+}
+
+.form-control{
+	width: 170px;
+	margin-left:-20px;
+}
+.shop-thumb__tag{
+	color:black;
+}
+
+.shop-thumb__title{
+	margin-top:20px;
+	
+}
+.mb-3 {
+  /* border: 1px solid rgba(0, 0, 0, 0.05); */
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  text-align: center;
+  -webkit-transition: border-color 0.1s, -webkit-box-shadow 0.1s;
+       -o-transition: border-color 0.1s, box-shadow 0.1s;
+          transition: border-color 0.1s, box-shadow 0.1s;
+}
+
+/* sort by*/
+.span1 {	
+	margin-top:100px;
+	margin-left: 100px;	
+	width: 220px;	
+	display:inline-table;	
+}
+.section-heading{
+	border-top:1px solid #000;
+	padding-top:30px;
+}
+.checkbox label:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;  
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-color: white;
+  color:#0066FF;
+  text-align: center;
+  font-family: "FontAwesome";
+  border:1px solid #888888;
+}
+.checkbox input[type="checkbox"]:checked + label::before {
+  content: "\f00c";
+}
+.checkbox label {
+  padding-left: 0;
+}
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+/* xiaomeng section --end */
+
+/*WENWEN SECTION BEGIN*/
+.img-detail {
+    width: 100%;
+    height: auto;
+}
+.item {
+    margin-top: 100px;
+    height: 660px;
+}
+.row {
+    margin-top: 16px;
+}
+#signup {
+    margin-right: 10px;
+}
+/*WENWEN SECTION -END*/

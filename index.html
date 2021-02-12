@@ -8,22 +8,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--  Font awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Style CSS-->
     <link rel="stylesheet" href="css/main.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+</head>
 
 <body>
     <!--Navigation-->
 
     <nav class="navbar navbar-expand-lg  fixed-top">
-        <a href="#" class="navbar-brand"><img src="http://placehold.it/150x50?text=Logo" alt=""></a>
+        <!-- <a href="#" class="navbar-brand"><img src="http://placehold.it/150x50?text=Logo" alt=""></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.jpg" width="100" height="50" alt="">
+        </a>
 
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav">
@@ -31,41 +36,44 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">WOMEN</a>
                     <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Outerwear</a>
-                        <a href="#" class="dropdown-item">Innerwear</a>
-                        <a href="#" class="dropdown-item">Underwear</a>
+                        <a href="category.html" class="dropdown-item">Outerwear</a>
+                        <a href="category.html" class="dropdown-item">Innerwear</a>
+                        <a href="category.html" class="dropdown-item">Underwear</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MAN</a>
                     <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Outerwear</a>
-                        <a href="#" class="dropdown-item">Innerwear</a>
-                        <a href="#" class="dropdown-item">Underwear</a>
+                        <a href="category.html" class="dropdown-item">Outerwear</a>
+                        <a href="category.html" class="dropdown-item">Innerwear</a>
+                        <a href="category.html" class="dropdown-item">Underwear</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Kids</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">KIDS</a>
                     <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Outerwear</a>
-                        <a href="#" class="dropdown-item">Innerwear</a>
+                        <a href="category.html" class="dropdown-item">Outerwear</a>
+                        <a href="category.html" class="dropdown-item">Innerwear</a>
                     </div>
                 </div>
             </div>
-            </div>
-            <form class="form-inline">
-                <div class="input-group">                    
-                    <input type="text" class="form-control" placeholder="Search">
-                    <div class="input-group-append">
-                        <button type="button" class="btn btn-secondary"><i class="fa fa-search"></i></button>
-                    </div>
-                </div>
-            </form>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <a class="nav-link btn btn-primary" href="shopping-cart.html">
-                    <i class="fa fa-shopping-cart mr-1"></i>
+        </div>
+        <form class="form-inline">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <a class="nav-link btn btn-secondary" href="search.html">
+                    <i class="fa fa-search"></i>
                 </a>
             </div>
+        </form>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <a href="signup.html" class="btn btn-primary" id="signup">
+                Signup
+            </a>
+            <a class="nav-link btn btn-primary" href="shopping-cart.html">
+                <i class="fa fa-shopping-cart mr-1"></i>
+            </a>
+        </div>
         </div>
     </nav>
 
@@ -74,212 +82,142 @@
     <section class="home">
         <div id="homeSlides" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#homeSlides" data-slide-to="0" class="active"></li>
-              <li data-target="#homeSlides" data-slide-to="1"></li>
-              <li data-target="#homeSlides" data-slide-to="2"></li>
+                <li data-target="#homeSlides" data-slide-to="0" class="active"></li>
+                <li data-target="#homeSlides" data-slide-to="1"></li>
+                <li data-target="#homeSlides" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-              <!-- Slide One - Set the background image for this slide in the line below -->
-              <div class="carousel-item active" style="background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/screen-shot-2020-09-24-at-10-55-54-am-1600959382.png?crop=0.755xw:1.00xh;0.245xw,0&resize=1200:*')">
-                <!-- <div class="carousel-caption d-none d-md-block">
-                  <h2 class="display-4">First Slide</h2>
-                  <p class="lead">This is a description for the first slide.</p>
-                </div> -->
-              </div>
-              <!-- Slide Two - Set the background image for this slide in the line below -->
-              <div class="carousel-item" style="background-image: url('https://stylecaster.com/wp-content/uploads/2016/09/milan-fashion-week-street-style-spring-2017-feat-02.jpg')">
-                <!-- <div class="carousel-caption d-none d-md-block">
-                  <h2 class="display-4">Second Slide</h2>
-                  <p class="lead">This is a description for the second slide.</p>
-                </div> -->
-              </div>
-              <!-- Slide Three - Set the background image for this slide in the line below -->
-              <div class="carousel-item" style="background-image: url('https://media1.popsugar-assets.com/files/thumbor/Y2aJ0gWKiQ6-jSrKYcNjdzeMP-M/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/03/28/770/n/1922564/c158ff7f7b935446_GettyImages-1137268816/i/All-I-Can-Say-Aint-Nobody-Fresher-Than-My-Clique.jpg')">
-                <!-- <div class="carousel-caption d-none d-md-block">
-                  <h2 class="display-4">Third Slide</h2>
-                  <p class="lead">This is a description for the third slide.</p>
-                </div> -->
-              </div>
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active"
+                    style="background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/screen-shot-2020-09-24-at-10-55-54-am-1600959382.png?crop=0.755xw:1.00xh;0.245xw,0&resize=1200:*')">
+                </div>
+
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item"
+                    style="background-image: url('https://stylecaster.com/wp-content/uploads/2016/09/milan-fashion-week-street-style-spring-2017-feat-02.jpg')">
+                </div>
+
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item"
+                    style="background-image: url('https://media1.popsugar-assets.com/files/thumbor/Y2aJ0gWKiQ6-jSrKYcNjdzeMP-M/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/03/28/770/n/1922564/c158ff7f7b935446_GettyImages-1137268816/i/All-I-Can-Say-Aint-Nobody-Fresher-Than-My-Clique.jpg')">
+                </div>
             </div>
             <a class="carousel-control-prev" href="#homeSlides" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
             <a class="carousel-control-next" href="#homeSlides" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-          </div>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </section>
 
     <!--Call to action-->
     <section class="call-to-action py-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 text-right">
-                        <h3 class="call-to-action-heading">Do you like discounts?</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <button class="btn btn-lg btn-outline-secondary mt-4">Learn More</button>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 text-right">
+                    <h3 class="call-to-action-heading">Do you like discounts?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="col-lg-4">
+                    <button class="btn btn-lg btn-outline-secondary mt-4">Learn More</button>
                 </div>
             </div>
+        </div>
     </section>
 
     <!--Products-->
     <section class="shop mt-5 my-5">
         <div class="container">
-            <h2 class="section-heading">Our beautiful dresses</h2>
-            <!-- <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-primary filter" data-rel="all">All</button>
-                <button type="button" class="btn btn-primary filter" data-rel="1">Category 1</button>
-                <button type="button" class="btn btn-primary filter" data-rel="2">Category 2</button>
-                <button type="button" class="btn btn-primary filter" data-rel="3">Category 3</button>
-                <button type="button" class="btn btn-primary filter" data-rel="4">Category 4</button>
-            </div> -->
+            <h2 class="section-heading">Most like clothing!</h2>
             <div class="products mt-5">
-                <div class="mb-3 pics all 2">
-                    <a href="detail.html">
+                <div class="mb-4 pics  ">
+                    <a href="product.html">
                         <img class="img-fluid" src="img/product-1.jpg" alt="Card img cap">
-                        <p class="price-tag rounded-circle"><span class="price">29</span><span class="dollor">$</span></p>
+                        <p class="price-tag rounded-circle"><span class="price">29</span><span class="dollor">$</span>
+                        </p>
                     </a>
                 </div>
-                <div class="mb-3 pics  all 1">
-                    <a href="detail.html">
+                <div class="mb-4 pics ">
+                    <a href="product.html">
                         <img class="img-fluid" src="img/product-2.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">29</span><span class="dolar">$</span></p>
+                        <p class="price-tag rounded-circle"><span class="price">29</span><span class="dolar">$</span>
+                        </p>
                     </a>
                 </div>
-                <div class="mb-3 pics  all 1">
-                    <a href="detail.html">
+                <div class="mb-4 pics ">
+                    <a href="product.html">
                         <img class="img-fluid" src="img/product-3.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span></p>
+                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span>
+                        </p>
                     </a>
                 </div>
-                <div class="mb-3 pics  all 2">
-                    <a href="detail.html">
+                <div class="mb-4 pics ">
+                    <a href="product.html">
                         <img class="img-fluid" src="img/product-4.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span></p>
+                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span>
+                        </p>
                     </a>
                 </div>
-                <div class="mb-3 pics  all 2">
-                    <a href="detail.html">
+                <div class="mb-4 pics ">
+                    <a href="product.html">
                         <img class="img-fluid" src="img/product-5.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">29</span><span class="dolar">$</span></p>
+                        <p class="price-tag rounded-circle"><span class="price">29</span><span class="dolar">$</span>
+                        </p>
                     </a>
                 </div>
-                <div class="mb-3 pics  all 2">
-                    <a href="detail.html">
+                <div class="mb-4 pics ">
+                    <a href="product.html">
                         <img class="img-fluid" src="img/product-6.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">39</span><span class="dolar">$</span></p>
+                        <p class="price-tag rounded-circle"><span class="price">39</span><span class="dolar">$</span>
+                        </p>
                     </a>
                 </div>
-                <div class="mb-3 pics  all 2">
-                    <a href="detail.html">
+                <div class="mb-4 pics ">
+                    <a href="product.html">
                         <img class="img-fluid" src="img/product-7.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span></p>
+                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span>
+                        </p>
                     </a>
                 </div>
-                <div class="mb-3 pics  all 1">
-                    <a href="detail.html">
+                <div class="mb-4 pics ">
+                    <a href="product.html">
                         <img class="img-fluid" src="img/product-8.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span></p>
+                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span>
+                        </p>
                     </a>
                 </div>
-                <div class="mb-3 pics  all 1">
-                    <a href="detail.html">
+                <div class="mb-4 pics ">
+                    <a href="product.html">
                         <img class="img-fluid" src="img/product-9.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span></p>
+                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span>
+                        </p>
                     </a>
                 </div>
-                <div class="mb-3 pics  all 1">
-                    <a href="detail.html">
+                <div class="mb-4 pics ">
+                    <a href="product.html">
                         <img class="img-fluid" src="img/product-10.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span></p>
+                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span>
+                        </p>
                     </a>
                 </div>
-                <div class="mb-3 pics  all 1">
-                    <a href="detail.html">
+                <div class="mb-4 pics ">
+                    <a href="product.html">
                         <img class="img-fluid" src="img/product-11.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span></p>
+                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span>
+                        </p>
                     </a>
                 </div>
-                <div class="mb-3 pics  all 1">
-                    <a href="detail.html">
+                <div class="mb-4 pics ">
+                    <a href="product.html">
                         <img class="img-fluid" src="img/product-12.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span></p>
+                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span>
+                        </p>
                     </a>
                 </div>
-                <div class="mb-3 pics  all 1">
-                    <a href="detail.html">
-                        <img class="img-fluid" src="img/product-13.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span></p>
-                    </a>
-                </div>
-                <div class="mb-3 pics  all 1">
-                    <a href="detail.html">
-                        <img class="img-fluid" src="img/product-14.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span></p>
-                    </a>
-                </div>
-                <div class="mb-3 pics  all 1">
-                    <a href="detail.html">
-                        <img class="img-fluid" src="img/product-15.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span></p>
-                    </a>
-                </div>
-            </div>
-        </div>  
-    </section>
-
-    <!--Developers-->
-    <section class="developers py-3">
-        <div class="container">
-            <div id="carousel" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <img class="float-right developers-image" src="img/developers-1.jpg" alt="John">
-                            </div>
-                            <div class="col-lg-6">
-                                <h3 class="call-to-action-heading">Hongxin Yin</h3>
-                                <blockquote>Student - AlgonquinCollege - Computer Programming -CST8285_300</blockquote>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <img class="float-right developers-image" src="img/developers-2.jpg" alt="John">
-                            </div>
-                            <div class="col-lg-6">
-                                <h3 class="call-to-action-heading">Wenwen Ji</h3>
-                                <blockquote>Student - AlgonquinCollege - Computer Programming -CST8285_300</blockquote>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <img class="float-right developers-image" src="img/developers-3.jpg" alt="John">
-                            </div>
-                            <div class="col-lg-6">
-                                <h3 class="call-to-action-heading">Xiaomeng Xu</h3>
-                                <blockquote>Student - AlgonquinCollege - Computer Programming -CST8285_300</blockquote>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </div>
     </section>
@@ -288,7 +226,7 @@
     <!--Footer-->
     <footer class="footer py-5">
         <div class="container">
-            <p class="copyright"> This website is made by Hongxin, Wenwen and Xiaomeng</p>
+            <p class="copyright"> ©2021 Hongxin, Wenwen and Xiaomeng. All rights reserved.</p>
         </div>
     </footer>
 
