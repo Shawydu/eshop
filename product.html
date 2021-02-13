@@ -73,6 +73,7 @@
     <section>
         <div class="container item">
             <div class="row">
+                <!-- col-numbers is Bootstrap 4 grid layouts (the column sum should add up to 12 or fewer) - learnt from w3schools -->
                 <div class="col-4 image">
                     <img src="img/women-3.jpg" class="img-detail" alt="...">
                 </div>
@@ -80,14 +81,26 @@
                 <div class="col-7 description">
                     <div class="container">
                         <div class="row">
-                            <h4 class="display-4">dress</h4>
+                            <h3 class="display-10">
+                                Zilcremo Women Casual Dress with Pockets
+                            </h3>
                         </div>
                         <div class="row" id="category">
-                            Calvin Klein
+                            <ul>
+                                <li>80% Cotton</li>
+                                <li>Cotton lining</li>
+                                <li>Tie Dye/Solid Print:95% Rayon,5% Polyester. 
+                                    Floral Print:35% Cotton, 65% Polyester.</li>
+                                <li>Women's split maxi dress is made of high quality fabric,lightweight,
+                                    breathable and skin-friendly,super soft and comfortable to wear all day.</li>
+                            </ul>                       
                         </div>
                         <form>
                             <div class="row">
-                                <div>size:</div>
+                                <div>Price: $79.99</div>
+                            </div>
+                            <div class="row">
+                                <div>Size:</div>
                                 <div class="col-5">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="sizeOptions" id="sizeOptionXS" value="1">
@@ -108,28 +121,31 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div>Qty</div>
+                                <div>Quantity</div>
                                 <div class="col-2">
                                     <select class="form-select quantity" aria-label="Default select quantity">
-                                        <option selected>Open this select quantity</option>
-                                        <option value="1">1</option>
+                                        <option value="1" selected>1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="row rating">
-                                <div>Reviews</div>
-                                <div class="col-3">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
+                            <div class="row">
+                                <div>User Rating</div>
+                                <div class="col-2 rating">
+                                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                                    
+                                </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <button type="submit" class="btn btn-dark col-6">Add To Bag</button>
+                                <button type="submit" class="btn btn-dark col-4">Add to Cart</button>
                             </div>
                         </form>
                     </div>
