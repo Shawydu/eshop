@@ -2,7 +2,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    margin-top: 50px; /*Solve the problem of navbar covering the next div*/
 }
 
 a i{
@@ -64,13 +63,8 @@ h4,h5,h6{
     font-size: 2rem;
 }
 
-.dropdown-item{
-    font-weight: bold !important;
-}
-
 .nav-link{
     color: black;
-    font-weight: 700;
 }
 
 /*Menu section*/
@@ -139,6 +133,7 @@ h4,h5,h6{
     font-size: 1.4rem;
 }
 
+
 /*footer section*/
 .footer{
     background-color:black;
@@ -164,32 +159,6 @@ h4,h5,h6{
     font-weight: 400;
     color: white;
 }
-
-/*Category page*/
-.path{
-    font-size: 10px;
-}
-
-.btn-category-1{
-    background-color:white;
-    border:transparent;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.btn-refine{
-    background-color:white;
-    border: transparent;
-    font-size: 12px;
-    font-style: oblique;
-}
-
-.btn-category{
-    background-color:white;
-    border: 1px black solid;
-    font-size: 12px;
-}
-
 
 /* HONGXIN SECTION END */
 
@@ -222,7 +191,6 @@ h4,h5,h6{
 	
 }
 .mb-3 {
-  /* border: 1px solid rgba(0, 0, 0, 0.05); */
   padding: 20px;
   margin-bottom: 20px;
   background-color: white;
@@ -271,46 +239,33 @@ h4,h5,h6{
 /* WENWEN SECTION BEGIN */
 .img-detail {
     width: 100%;
-    /* automatically adjust height to allow its content to be displayed correctly */
-    height: auto;
+    height: auto; /* auto adjust height to display the image correctly */
 }
-/* .row {
-    margin-top: 16px;
-} */
-
 .rating {
     /* set the direction of the flexible items (i.e.rating values) in reverse order */
     display: flex;
     flex-direction: row-reverse;
 }
 .rating > input {
-    /* make the radio button invisible */
-    display: none;
+    display: none; /* make radio buttons invisible */
 }
 .rating > label {
-    /* position: relative; */
-    color: orange;
+    position: relative;
+    color: orange; 
     font-size: 20px;
-    /* the cursor will become a pointer when hovering the rating star */
-    cursor: pointer;
+    cursor: pointer; /* the cursor will become a pointer when hovering stars */
 }
-.rating > label::before {
-    content: "\2605";
-    /* The element is positioned relative to its first positioned (not static) ancestor element */
+.rating > label::before { 
+    content: "\2605"; /* star */
     position: absolute;
-    opacity: 0;
+    opacity: 0; /* transparency */
 }
 .rating > label:hover::before,
-.rating > label:hover~label::before {
+.rating > label:hover~label::before { /* stars will be filled once hovered */
     opacity: 1;
 }
-.rating>input:checked~label::before {
+.rating>input:checked~label::before { /* stars will be filled once checked */
     opacity: 1;
-}
-/* indicate the current page’s location within a navigational hierarchy 
-that automatically adds separators via CSS - learnt from Bootstrap */
-.breadcrumb {
-    background-color: white;
 }
 #signup {
     margin-right: 10px;
