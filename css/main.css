@@ -82,7 +82,7 @@ h4,h5,h6{
 .home{
     width: 100%;
     min-height: 660px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .home .carousel-item {
@@ -131,12 +131,12 @@ h4,h5,h6{
 }
 
 .price{
-    font-size: 2rem;
+    font-size: 1.2rem; /*rem: font size of the root element. Easy to match different devices*/
     font-weight: 700;
 }
 
 .dollar{
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 /*footer section*/
@@ -167,7 +167,7 @@ h4,h5,h6{
 
 /*Category page*/
 .path{
-    font-size: 10px;
+    font-size: 0.8rem;
 }
 
 .btn-category-1{
@@ -179,14 +179,14 @@ h4,h5,h6{
 
 .btn-refine{
     background-color:white;
-    border: transparent;
+    border: transparent; /*hidden the border*/
     font-size: 12px;
     font-style: oblique;
 }
 
 .btn-category{
     background-color:white;
-    border: 1px black solid;
+    border: 1px black solid; /*show the border*/
     font-size: 12px;
 }
 
