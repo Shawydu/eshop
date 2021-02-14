@@ -99,6 +99,7 @@ h4,h5,h6{
     background-color: black;
 }
 
+
 /*Product*/
 .img-fluid {
     width: 100% !important;
@@ -192,6 +193,7 @@ h4,h5,h6{
 
 /* HONGXIN SECTION END */
 
+
 /* XIAOMENG SECTION  BEGIN */
 .search{
 	column-count: 3;
@@ -263,35 +265,38 @@ h4,h5,h6{
 .checkbox input[type="checkbox"] {
   display: none;
 }
-/* xiaomeng section --end */
+/* XIAOMENG SECTION --END */
 
-/*WENWEN SECTION BEGIN*/
+
+/* WENWEN SECTION BEGIN */
 .img-detail {
     width: 100%;
+    /* automatically adjust height to allow its content to be displayed correctly */
     height: auto;
 }
-.item {
-    margin-top: 100px;
-    height: 660px;
-}
-.row {
+/* .row {
     margin-top: 16px;
-}
+} */
+
 .rating {
+    /* set the direction of the flexible items (i.e.rating values) in reverse order */
     display: flex;
     flex-direction: row-reverse;
 }
 .rating > input {
+    /* make the radio button invisible */
     display: none;
 }
 .rating > label {
-    position: relative;
+    /* position: relative; */
     color: orange;
-    font-size: 18px;
+    font-size: 20px;
+    /* the cursor will become a pointer when hovering the rating star */
     cursor: pointer;
 }
 .rating > label::before {
     content: "\2605";
+    /* The element is positioned relative to its first positioned (not static) ancestor element */
     position: absolute;
     opacity: 0;
 }
@@ -302,7 +307,12 @@ h4,h5,h6{
 .rating>input:checked~label::before {
     opacity: 1;
 }
+/* indicate the current page’s location within a navigational hierarchy 
+that automatically adds separators via CSS - learnt from Bootstrap */
+.breadcrumb {
+    background-color: white;
+}
 #signup {
     margin-right: 10px;
 }
-/*WENWEN SECTION -END*/
+/* WENWEN SECTION -END */
