@@ -73,12 +73,28 @@
     <!--Products-->
     <section class="shop mt-5 my-5">
         <div class="container">
-            <h5 class="section-heading"></h5>
+            &nbsp; <!-- Solve the problem of navbar covering the next div-->
+            <div class="path mt-4"> <!-- simple breadcrumb-->
+                <span>
+                    <a href="index.html">Women</a> / 
+                    <a href="#">Tops</a> / 
+            </div>
             <div class="d-flex justify-content-start">
-                <button type="button" class="btn btn-primary" >All</button>
-                <button type="button" class="btn btn-primary" >Tops</button>
-                <button type="button" class="btn btn-primary" >Pants</button>
-                <button type="button" class="btn btn-primary" >Dress</button>
+                <div class="p-2 flex-grow-1 ">
+                    <button type="button" class="btn-category-1">Tops</button>
+                </div>
+                <div class="p-2 " >
+                    <button type="button" class="btn-refine">Refine by : </button>
+                </div>
+                <div class="p-2">
+                    <button type="button" class="btn-category">Tops+</button>
+                </div>
+                <div class="p-2">
+                    <button type="button" class="btn-category">Pants+</button>
+                </div>
+                <div class="p-2">
+                    <button type="button" class="btn-category">Dress+</button>
+                </div>
             </div>
             <div class="products mt-5">
                 <div class="mb-4 pics  ">

@@ -2,6 +2,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    margin-top: 50px; /*Solve the problem of navbar covering the next div*/
 }
 
 a i{
@@ -63,8 +64,13 @@ h4,h5,h6{
     font-size: 2rem;
 }
 
+.dropdown-item{
+    font-weight: bold !important;
+}
+
 .nav-link{
     color: black;
+    font-weight: 700;
 }
 
 /*Menu section*/
@@ -132,7 +138,6 @@ h4,h5,h6{
     font-size: 1.4rem;
 }
 
-
 /*footer section*/
 .footer{
     background-color:black;
@@ -158,6 +163,32 @@ h4,h5,h6{
     font-weight: 400;
     color: white;
 }
+
+/*Category page*/
+.path{
+    font-size: 10px;
+}
+
+.btn-category-1{
+    background-color:white;
+    border:transparent;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn-refine{
+    background-color:white;
+    border: transparent;
+    font-size: 12px;
+    font-style: oblique;
+}
+
+.btn-category{
+    background-color:white;
+    border: 1px black solid;
+    font-size: 12px;
+}
+
 
 /* HONGXIN SECTION END */
 
