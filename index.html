@@ -16,10 +16,14 @@
     <link rel="stylesheet" href="css/main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <script src="js/eshop.js" defer></script>
 </head>
 
 <body>
     <!--Navigation-->
+    <!--Includes Logo, Category menu with dropdown, search and cart items
+        code reference: https://getbootstrap.com/docs/4.3/components/navbar/?
+    -->
     <nav class="navbar navbar-expand-lg  fixed-top">
         <a class="navbar-brand" href="#">
             <img src="img/logo.jpg" width="100" height="50" alt="">
@@ -72,6 +76,9 @@
     </nav>
 
     <!--Home screen-->
+    <!--Three slides are to enrich the website.
+        code reference: https://getbootstrap.com/docs/4.3/components/carousel/#slides-only
+    -->
     <section class="home">
         <div id="homeSlides" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -107,14 +114,17 @@
     </section>
 
     <!--Call to action-->
+    <!--
+        Display reward information.
+    -->
     <section class="call-to-action py-3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 text-right">
+                <div class="col-lg-8 text-right"> <!--Text takes 8 columns-->
                     <h3 class="call-to-action-heading">Rewards Members Get more to Love</h3>
                     <p>Get 20x the points with eShop Credit <br> or 10x the points however else you pay</p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4"> <!--button takes 4 columns-->
                     <button class="btn btn-lg btn-outline-secondary mt-4">Learn More</button>
                 </div>
             </div>
@@ -122,66 +132,15 @@
     </section>
 
     <!--Products-->
+    <!--
+        Display the products most people like.
+        Put the price at left-top on image via CSS.
+    -->
     <section class="shop mt-5 my-5">
         <div class="container">
             <h2 class="section-heading">Most like clothing!</h2>
             <div class="products mt-5">
-                <div class="mb-4 pics  ">
-                    <a href="product.html">
-                        <img class="img-fluid" src="img/women-4.jpg" alt="Card img cap">
-                        <p class="price-tag rounded-circle"><span class="price">29</span><span class="dollor">$</span>
-                        </p>
-                    </a>
-                </div>
-                <div class="mb-4 pics ">
-                    <a href="product.html">
-                        <img class="img-fluid" src="img/women-5.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">39</span><span class="dolar">$</span>
-                        </p>
-                    </a>
-                </div>
-                <div class="mb-4 pics ">
-                    <a href="product.html">
-                        <img class="img-fluid" src="img/women-1.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">29</span><span class="dolar">$</span>
-                        </p>
-                    </a>
-                </div>
-                <div class="mb-4 pics ">
-                    <a href="product.html">
-                        <img class="img-fluid" src="img/women-2.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">49</span><span class="dolar">$</span>
-                        </p>
-                    </a>
-                </div>
-                <div class="mb-4 pics ">
-                    <a href="product.html">
-                        <img class="img-fluid" src="img/man-3.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span>
-                        </p>
-                    </a>
-                </div>
-                <div class="mb-4 pics ">
-                    <a href="product.html">
-                        <img class="img-fluid" src="img/women-3.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">79</span><span class="dolar">$</span>
-                        </p>
-                    </a>
-                </div>
-                <div class="mb-4 pics ">
-                    <a href="product.html">
-                        <img class="img-fluid" src="img/kids-2.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">29</span><span class="dolar">$</span>
-                        </p>
-                    </a>
-                </div>
-                <div class="mb-4 pics ">
-                    <a href="product.html">
-                        <img class="img-fluid" src="img/kids-4.jpg" alt="Card image cap">
-                        <p class="price-tag rounded-circle"><span class="price">19</span><span class="dolar">$</span>
-                        </p>
-                    </a>
-                </div>
+            <!--load products by JS script-->
             </div>
         </div>
     </section>
