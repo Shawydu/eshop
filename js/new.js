@@ -79,7 +79,7 @@ window.onload = function () {
 	}else{
 		let productSection = document.querySelector(".search");
 		for (let i = 0; i < subArray.length; i++) {
-			createProduct(productSection, subArray[i], "product.html");
+			createProduct(productSection, subArray[i]);
 		}
 	}
 
@@ -92,12 +92,11 @@ window.onload = function () {
  * @param {*} product 
  * @param {*} linkText 
  */
-function createProduct(parent, product, linkText) {
+function createProduct(parent, product) {
 	let div1 = document.createElement("div");
 	div1.setAttribute("class", "mb-3 pics");
 
 	let a = document.createElement("a");
-	a.href = linkText;  
 
 	let image = document.createElement("img");
 	image.setAttribute("class", "img-fluid");
