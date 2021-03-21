@@ -143,7 +143,6 @@ function loadProducts() {
  * 
  * @param {*} parent parent element of products
  * @param {*} product information of a product
- * @param {*} linkText webpage name
  */
 function createProduct(parent, product) {
 
