@@ -2,275 +2,180 @@
 <html lang="en">
 
 <head>
-    <title>EShop</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>EShop</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!--  Font awesome-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Style CSS-->
-    <link rel="stylesheet" href="css/main.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--  Font awesome-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Style CSS-->
+	<link rel="stylesheet" href="css/main.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!--Navigation-->
-    <nav class="navbar navbar-expand-lg  fixed-top">
-        <a class="navbar-brand" href="#">
-            <img src="img/logo.jpg" width="100" height="50" alt="">
-        </a>
-        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-            <div class="navbar-nav">
-                <a href="index.html" class="nav-item nav-link active">HOME</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">WOMEN</a>
-                    <div class="dropdown-menu">
-                        <a href="category.html" class="dropdown-item">Tops</a>
-                        <a href="category.html" class="dropdown-item">Pants</a>
-                        <a href="category.html" class="dropdown-item">Dress</a>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MAN</a>
-                    <div class="dropdown-menu">
-                        <a href="category.html" class="dropdown-item">Tops</a>
-                        <a href="category.html" class="dropdown-item">Pants</a>
-                        <a href="category.html" class="dropdown-item">Activewear</a>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">KIDS</a>
-                    <div class="dropdown-menu">
-                        <a href="category.html" class="dropdown-item">Boys</a>
-                        <a href="category.html" class="dropdown-item">Girls</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <form class="form-inline">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search">
-                <a class="nav-link btn btn-secondary" href="result.html">
-                    <i class="fa fa-search"></i>
-                </a>
-            </div>
-        </form>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <a href="signup.html" class="btn btn-primary" id="signup">
-                Signup
-            </a>
-            <a class="nav-link btn btn-primary" href="shopping-cart.html">
-                <i class="fa fa-shopping-cart mr-1"></i>
-            </a>
-        </div>
-        </div>
-    </nav>
-
-    <!--filter & sort by-->
-	<section class="shop-filter">
-		<div class="container">	
-			<!--sort by price -->
-			<div class="span1">                                       
-				<h3>Sort By :</h3>                                            
-				<select class="form-control store-select">
-					<option>Default</option>
-					<option>Price(Low > High)</option>
-					<option>Price(High > Low)</option>
-				</select>  
+	<!--Navigation-->
+	<nav class="navbar navbar-expand-lg  fixed-top">
+		<a class="navbar-brand" href="#">
+			<img src="img/logo.jpg" width="100" height="50" alt="">
+		</a>
+		<div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+			<div class="navbar-nav">
+					<a href="index.html" class="nav-item nav-link active">HOME</a>
+					<div class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">WOMEN</a>
+						<div class="dropdown-menu">
+							<a href="category.html" class="dropdown-item">Tops</a>
+							<a href="category.html" class="dropdown-item">Pants</a>
+							<a href="category.html" class="dropdown-item">Dress</a>
+						</div>
+					</div>
+					<div class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MAN</a>
+						<div class="dropdown-menu">
+							<a href="category.html" class="dropdown-item">Tops</a>
+							<a href="category.html" class="dropdown-item">Pants</a>
+							<a href="category.html" class="dropdown-item">Activewear</a>
+						</div>
+					</div>
+					<div class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">KIDS</a>
+						<div class="dropdown-menu">
+							<a href="category.html" class="dropdown-item">Boys</a>
+							<a href="category.html" class="dropdown-item">Girls</a>
+						</div>
+					</div>
 			</div>
-			
-			<!--filter by price-->								
-			<div class="span1">						
+		</div>
+		<form class="form-inline">
+			<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search">
+					<a class="nav-link btn btn-secondary">
+						<i class="fa fa-search"></i>
+					</a>
+			</div>
+		</form>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<a href="signup.html" class="btn btn-primary" id="signup">
+					Signup
+			</a>
+			<a class="nav-link btn btn-primary" href="shopping-cart.html">
+					<i class="fa fa-shopping-cart mr-1"></i>
+			</a>
+		</div>
+		</div>
+	</nav>
+
+	<!--filter & sort by-->
+	<section class="shop-filter">
+		<div class="container">
+			<!--sort by price -->
+			<div class="span1">
+				<h3>Sort By :</h3>
+				<select class="form-control store-select">
+					<option value="default">Default</option>
+					<option value="up">Price(Low > High)</option>
+					<option value="down">Price(High > Low)</option>
+				</select>
+			</div>
+
+			<!--filter by price-->
+			<div class="span1">
 				<h3 class="headline"><span>Price</span></h3>
 				<div class="radio">
-					<input type="radio" name="shop-filter__price" id="shop-filter-price_1" value="" checked="">
+					<input type="radio" name="shop-filter__price" id="shop-filter-price_1" value="">
+					<label for="shop-filter-price_1">all</label>
+				</div>				
+				<div class="radio">
+					<input type="radio" name="shop-filter__price" id="shop-filter-price_1" value="Under25">
 					<label for="shop-filter-price_1">Under $25</label>
 				</div>
 				<div class="radio">
-					<input type="radio" name="shop-filter__price" id="shop-filter-price_2" value="">
+					<input type="radio" name="shop-filter__price" id="shop-filter-price_2" value="25To50">
 					<label for="shop-filter-price_2">$25 to $50</label>
 				</div>
 				<div class="radio">
-					<input type="radio" name="shop-filter__price" id="shop-filter-price_3" value="">
+					<input type="radio" name="shop-filter__price" id="shop-filter-price_3" value="50To100">
 					<label for="shop-filter-price_3">$50 to $100</label>
 				</div>
 				<div class="radio">
-					<input type="radio" name="shop-filter__price" id="shop-filter-price_4" value="specify">
+					<input type="radio" name="shop-filter__price" id="shop-filter-price_4" value="Above100">
 					<label for="shop-filter-price_4">Above $100</label>
 				</div>
 			</div>
-			
-			
+
+
 			<!--filter by ratings-->
 			<div class="span1">
 				<h3 class="headline">
 					<span>Ratings</span>
 				</h3>
 				<div class="checkbox">
-					<input type="checkbox" value="" id="shop-filter-checkbox_1" checked="">
+					<input type="checkbox" name='rating' value="above4" id="shop-filter-checkbox_1" onclick="filterByRating(this)">
 					<label for="shop-filter-checkbox_1">4 Star & up</label>
 				</div>
 				<div class="checkbox">
-					<input type="checkbox" value="" id="shop-filter-checkbox_2">
+					<input type="checkbox"  name='rating' value="3To4" id="shop-filter-checkbox_2" onclick="filterByRating(this)">
 					<label for="shop-filter-checkbox_2">3 star to 4 star</label>
 				</div>
 				<div class="checkbox">
-					<input type="checkbox" value="" id="shop-filter-checkbox_3">
+					<input type="checkbox"  name='rating' value="2To3" id="shop-filter-checkbox_3" onclick="filterByRating(this)">
 					<label for="shop-filter-checkbox_3">2 star to 3 star</label>
 				</div>
 				<div class="checkbox">
-					<input type="checkbox" value="" id="shop-filter-checkbox_4">
+					<input type="checkbox"  name='rating' value="under2" id="shop-filter-checkbox_4" onclick="filterByRating(this)">
 						<label for="shop-filter-checkbox_4">Under 2 star</label>
 				</div>
-			</div>	
-		</div>		
+			</div>
+		</div>
 	</section>
-												
-	<!--products-->
-    <section class="shop mt-5 my-5">
-        <div class="container">
-            <h2 class="section-heading">Search results</h2>
-            <div class="search mt-5"> 
-				<div class="mb-3 pics  ">
-                    <a href="detail.html">
-                        <img class="img-fluid" src="img/women-3.jpg" alt="Card image cap">
-						<div class="shop-thumb__tag">
-						<h5 class="shop-thumb__title">Zilcremo Women Dress</h5>
-						<div class="shop-thumb__price">
-							$79.99			
-						</div>
-						</div>
-						</a>
-						<div class="shop-thumb__rating">
-							<Span>Ratings</Span>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star"></div>
-							<div class="fa fa-star"></div>
-						</div>
-                </div>
-                <div class="mb-3 pics  ">
-                    <a href="detail.html">
-                        <img class="img-fluid" src="img/kids-2.jpg" alt="Card image cap">
-						<div class="shop-thumb__tag">
-						<h5 class="shop-thumb__title">Girls Fitted Lace-detail Dress</h5>
-						<div class="shop-thumb__price">
-							$19.99			
-						</div>
-						</div>
-						</a>
-						<div class="shop-thumb__rating">
-							<Span>Ratings</Span>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star"></div>
-						</div>
-                </div>
-                <div class="mb-3 pics  ">
-                    <a href="detail.html">
-                        <img class="img-fluid" src="img/man-3.jpg" alt="Card image cap">
-						<div class="shop-thumb__tag">
-						<h5 class="shop-thumb__title">Short-sleeved Cotton T-shirt</h5>
-						<div class="shop-thumb__price">
-							$39.99			
-						</div>
-						</div>
-						</a>
-						<div class="shop-thumb__rating">
-							<Span>Ratings</Span>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star"></div>
-						</div>
-                </div>
-                <div class="mb-3 pics">
-                    <a href="detail.html">
-                        <img class="img-fluid" src="img/women-2.jpg" alt="Card image cap">
-						<div class="shop-thumb__tag">
-						<h5 class="shop-thumb__title">Knit Dress</h5>
-						<div class="shop-thumb__price">
-							$29.99			
-						</div>
-						</div>
-						</a>
-						<div class="shop-thumb__rating">
-							<Span>Ratings</Span>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star"></div>
-							<div class="fa fa-star"></div>
-						</div>
-                </div>
-                <div class="mb-3 pics">
-                    <a href="detail.html">
-                        <img class="img-fluid" src="img/women-5.jpg" alt="Card image cap">
-						<div class="shop-thumb__tag">
-						<h5 class="shop-thumb__title">Pleated Chiffon Blouse</h5>
-						<div class="shop-thumb__price">
-							$49.99			
-						</div>
-						</div>
-						</a>
-						<div class="shop-thumb__rating">
-							<Span>Ratings</Span>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star"></div>
-							<div class="fa fa-star"></div>
-						</div>
-                </div>
-                <div class="mb-3 pics">
-                    <a href="detail.html">
-                        <img class="img-fluid" src="img/man-1.jpg" alt="Card image cap">
-						<div class="shop-thumb__tag">
-						<h5 class="shop-thumb__title">Denim Shirt Jacke</h5>
-						<div class="shop-thumb__price">
-							$59.99			
-						</div>
-						</div>
-						</a>
-						<div class="shop-thumb__rating">
-							<Span>Ratings</Span>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star checked"></div>
-							<div class="fa fa-star"></div>
-						</div>
-                </div>               
-            </div>
-        </div>  
-    </section>
 
-    <!--Footer-->
-    <footer class="footer py-5">
-        <div class="container">
-            <p class="copyright"> ©2021 Hongxin, Wenwen and Xiaomeng. All rights reserved.<br> All the pictures are from https://www.pexels.com</p>
-        </div>
-    </footer>
+<!--products-->
+	<section class="shop mt-5 my-5">
+		<div class="container">
+			<h2 class="section-heading">Search results</h2>
+			
+			<div class="search mt-5">
+				<!--
+				<div class="mb-3 pics" data-price="79.99">
+					<a href="product.html">
+						<img class="img-fluid" src="img/women-3.jpg" alt="Card image cap">
+						<div class="shop-thumb__tag">
+							<h5 class="shop-thumb__title">Zilcremo Women Dress</h5>
+							<h6 class="shop-thumb__price">$79.99</h6>							
+						</div>
+					</a>
+					<div class="shop-thumb__rating">
+						<Span>Ratings</Span>
+						<div class="fa fa-star checked"></div>
+						<div class="fa fa-star checked"></div>
+						<div class="fa fa-star checked"></div>
+						<div class="fa fa-star"></div>
+						<div class="fa fa-star"></div>
+					</div>
+				</div>
+				-->
+			</div>
+				
+		</div>
+	</section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+	<!--Footer-->
+	<footer class="footer py-5">
+		<div class="container">
+			<p class="copyright"> ©2021 Hongxin, Wenwen and Xiaomeng. All rights reserved.<br> All the pictures are from https://www.pexels.com</p>
+		</div>
+	</footer>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+	<script src="js/new.js"></script>
+	
 </body>
 
 </html>
