@@ -1,4 +1,4 @@
-// mock data of products
+// array of products
 const productList = [
     {
         "id": 1,
@@ -82,59 +82,19 @@ const productList = [
     }
 ];
 
-/**
- * load products on landing page
- */
-$(function () { 
-	let productSection  = document.querySelector(".products");
-    for(let i = 0; i < productList.length; i++){
-        createProduct(productSection, productList[i], "product.html");
-    }
-})
+$(() => { //same as window.load
+    const id = window.location.search.split("=")[1]; //extract product id from URL
+    let product = productList.find(product => {
+        return product.id == parseInt(id); //find the product by id
+    });
 
-/**
- * Dynamically create product 
- * 
- * @param {*} section parent element of products
- * @param {*} product information of a product
- * @param {*} linkText webpage name
- */
-function createProduct(section, product, linkText) {
+    $(".img-detail").attr("src", product.img); //update the product image
+    $("#title").text(product.title); //update the product title
+    $("#description").text(product.description); //update the product description
+    $("#price").text(product.price); //update the product price
 
-    // crate a div
-	let div = document.createElement("div");
-	div.setAttribute("class", "mb-4 pics");
-
-    // create a element
-    let a = document.createElement("a");
-    // a.href = linkText;
-    a.href = linkText + "?id=" + product.id; // pass product.id to product page as query parameter
-
-    //create img element
-    let image = document.createElement("img");
-    image.setAttribute("class", "img-fluid");
-    image.setAttribute("src", product.img);
-    image.setAttribute("alt", "Card image cap");
-    a.appendChild(image);
-
-    // create p elment
-    let p = document.createElement("p");
-    p.setAttribute("class", "price-tag rounded-circle");
-    
-    // create span element
-    let spanPrice = document.createElement("span");
-    spanPrice.setAttribute("class","price");
-    spanPrice.innerText = product.price;
-    p.appendChild(spanPrice);
-
-    // create span element
-    let spanDolar = document.createElement("span");
-    spanDolar.setAttribute("class","dolar");
-    spanDolar.innerText = '$';
-    
-    p.appendChild(spanDolar);
-    a.appendChild(p);
-	div.appendChild(a);
-	section.appendChild(div);
-}
-
+    $(".quantity").change(() => { //update price based on the selected quantity
+        const quantity = $(".quantity option:selected").text();
+        $("#price").text(parseFloat(product.price)*parseInt(quantity));
+    });
+});
