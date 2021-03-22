@@ -88,15 +88,33 @@ const productList = [
         "price": 9.9,
         "img": "img/kids-4.jpg",
         "category": 3
+    },
+    {
+        "id": 11,
+        "title": "short-sleeved Cotton T-shirt",
+        "description": "Cotton 100% A streetwear collection of minimalistic pieces – the perfect canvas for your personal style and creativity. This contemporary, short-sleeved T-shirt is made from heavy, 7 oz. cotton jersey for a premium handfeel. Straight-cut, oversized, and relaxed fit with a crew neck, dropped shoulders, and ribbing at neck and cuffs.",
+        "price": 19,
+        "img": "img/man-3.jpg",
+        "category": 3
+    },
+    {
+        "id": 12,
+        "title": "Pleated Chiffon Blouse",
+        "description": "Shell: Polyester 100%Lining: Polyester 100% Blouse in airy chiffon made from recycled polyester. Low stand-up collar with pleats extending over shoulders and V-neck opening with narrow ties. Long, wide raglan sleeves and narrow cuffs and covered button. Lined. Lining made partly with recycled polyester.",
+        "price": 39,
+        "img": "img/women-5.jpg",
+        "category": 1
     }
 ];
 
 /**
- * Firstly execute the function to load products and add event listener on search button after landing page is ready
+ * Execute the function to load products 
+ * and add event listener on search button after landing page is ready
  */
  $(function () {
     loadProducts();
     registeEvent();
+    
 })
 
 
@@ -111,6 +129,27 @@ function registeEvent(){
 	document.querySelectorAll("img").forEach((image) => {
 		image.addEventListener('click',  function() { clickImage(this); });
 	});
+
+    // add scroll event
+    let scrollButton = document.querySelector(".scroll-btn");
+    window.addEventListener('scroll', () => {
+        // When the user scrolls down 200px from the top of the document, show the button
+        // reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top
+        if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+            scrollButton.style.display = 'block';
+        }else{
+            scrollButton.style.display = 'none';
+        }
+    })
+
+    // add click event on scroll button to scroll to top
+    scrollButton.addEventListener('click', () => {
+        window.scroll({
+            top: 0,
+            behavior: "smooth"
+        })
+    });
+
 }
 
 /**
