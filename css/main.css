@@ -110,9 +110,11 @@ h4,h5,h6{
 
 /*Product*/
 .img-fluid {
-    width: 100% !important;
+    /* width: 100% !important; */
+    width: 270px;
     height: 400px !important;
     object-fit: cover !important;
+    margin-left: 10px;
 }
 
 .products{
