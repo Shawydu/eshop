@@ -98,24 +98,6 @@ const productList = [
         "rating": 5,
         "img": "img/kids-4.jpg",
         "category": 3
-    },
-    {
-        "id": 11,
-        "title": "short-sleeved Cotton T-shirt",
-        "description": "Cotton 100% A streetwear collection of minimalistic pieces – the perfect canvas for your personal style and creativity. This contemporary, short-sleeved T-shirt is made from heavy, 7 oz. cotton jersey for a premium handfeel. Straight-cut, oversized, and relaxed fit with a crew neck, dropped shoulders, and ribbing at neck and cuffs.",
-        "price": 19,
-        "rating": 2,
-        "img": "img/man-3.jpg",
-        "category": 3
-    },
-    {
-        "id": 12,
-        "title": "Pleated Chiffon Blouse",
-        "description": "Shell: Polyester 100%Lining: Polyester 100% Blouse in airy chiffon made from recycled polyester. Low stand-up collar with pleats extending over shoulders and V-neck opening with narrow ties. Long, wide raglan sleeves and narrow cuffs and covered button. Lined. Lining made partly with recycled polyester.",
-        "price": 39,
-        "rating": 3,
-        "img": "img/women-1.jpg",
-        "category": 1
     }
 ];
 

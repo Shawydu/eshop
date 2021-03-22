@@ -206,12 +206,6 @@ h4,h5,h6{
 
 
 /* XIAOMENG SECTION  BEGIN */
-.search{
-	column-count: 3;
-    column-width: 100px;    
-    background-color: white;
-}
-
 .search .pics{
     position: relative;
 }
@@ -233,13 +227,13 @@ h4,h5,h6{
 	
 }
 .mb-3 {
+  width:357px;
+  height:555px;
   padding: 20px;
   margin-bottom: 20px;
   background-color: white;
   text-align: center;
-  -webkit-transition: border-color 0.1s, -webkit-box-shadow 0.1s;
-       -o-transition: border-color 0.1s, box-shadow 0.1s;
-          transition: border-color 0.1s, box-shadow 0.1s;
+
 }
 
 /* sort by*/

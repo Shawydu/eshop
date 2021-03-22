@@ -54,7 +54,7 @@
 		<form class="form-inline">
 			<div class="input-group">
 					<input type="text" class="form-control" placeholder="Search">
-					<a class="nav-link btn btn-secondary">
+					<a class="nav-link btn btn-secondary btn_search">
 						<i class="fa fa-search"></i>
 					</a>
 			</div>
@@ -115,19 +115,19 @@
 					<span>Ratings</span>
 				</h3>
 				<div class="checkbox">
-					<input type="checkbox" name='rating' value="above4" id="shop-filter-checkbox_1" onclick="filterByRating(this)">
+					<input type="checkbox" name='rating' value="above4" id="shop-filter-checkbox_1" >
 					<label for="shop-filter-checkbox_1">4 Star & up</label>
 				</div>
 				<div class="checkbox">
-					<input type="checkbox"  name='rating' value="3To4" id="shop-filter-checkbox_2" onclick="filterByRating(this)">
+					<input type="checkbox"  name='rating' value="3To4" id="shop-filter-checkbox_2" >
 					<label for="shop-filter-checkbox_2">3 star to 4 star</label>
 				</div>
 				<div class="checkbox">
-					<input type="checkbox"  name='rating' value="2To3" id="shop-filter-checkbox_3" onclick="filterByRating(this)">
+					<input type="checkbox"  name='rating' value="2To3" id="shop-filter-checkbox_3" >
 					<label for="shop-filter-checkbox_3">2 star to 3 star</label>
 				</div>
 				<div class="checkbox">
-					<input type="checkbox"  name='rating' value="under2" id="shop-filter-checkbox_4" onclick="filterByRating(this)">
+					<input type="checkbox"  name='rating' value="under2" id="shop-filter-checkbox_4" >
 						<label for="shop-filter-checkbox_4">Under 2 star</label>
 				</div>
 			</div>
@@ -139,8 +139,8 @@
 		<div class="container">
 			<h2 class="section-heading">Search results</h2>
 			
-			<div class="search mt-5">
-				<!--
+				<div class="row">
+					<!--	
 				<div class="mb-3 pics" data-price="79.99">
 					<a href="product.html">
 						<img class="img-fluid" src="img/women-3.jpg" alt="Card image cap">
