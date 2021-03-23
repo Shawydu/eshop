@@ -163,7 +163,7 @@ function createProduct(parent, product) {
 	div1.setAttribute("class", "mb-3 pics");
 
 	let a = document.createElement("a");
-	a.href = "product.html";
+	a.href = "product.html?id=" + product.id;
 	
 
 	let image = document.createElement("img");
