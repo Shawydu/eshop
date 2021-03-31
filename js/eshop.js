@@ -1,7 +1,7 @@
 
 const page = {
-	PRODUCT: "product.html",
-	RESULT: "result.html",
+	PRODUCT: "product.php",
+	RESULT: "result.php",
 };
 
 /** 

@@ -1,74 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<title>EShop</title>
-	<!-- Required meta tags -->
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<!--  Font awesome-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Style CSS-->
-	<link rel="stylesheet" href="css/main.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
-</head>
+<?php
+include ("partials/head.php");
+?>
 
 <body>
 	<!--Navigation-->
-	<nav class="navbar navbar-expand-lg  fixed-top">
-		<a class="navbar-brand" href="#">
-			<img src="img/logo.jpg" width="100" height="50" alt="">
-		</a>
-		<div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-			<div class="navbar-nav">
-					<a href="index.html" class="nav-item nav-link active">HOME</a>
-					<div class="nav-item dropdown">
-						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">WOMEN</a>
-						<div class="dropdown-menu">
-							<a href="category.html" class="dropdown-item">Tops</a>
-							<a href="category.html" class="dropdown-item">Pants</a>
-							<a href="category.html" class="dropdown-item">Dress</a>
-						</div>
-					</div>
-					<div class="nav-item dropdown">
-						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MAN</a>
-						<div class="dropdown-menu">
-							<a href="category.html" class="dropdown-item">Tops</a>
-							<a href="category.html" class="dropdown-item">Pants</a>
-							<a href="category.html" class="dropdown-item">Activewear</a>
-						</div>
-					</div>
-					<div class="nav-item dropdown">
-						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">KIDS</a>
-						<div class="dropdown-menu">
-							<a href="category.html" class="dropdown-item">Boys</a>
-							<a href="category.html" class="dropdown-item">Girls</a>
-						</div>
-					</div>
-			</div>
-		</div>
-		<form class="form-inline">
-			<div class="input-group">
-					<input type="text" class="form-control" placeholder="Search">
-					<a class="nav-link btn btn-secondary btn_search">
-						<i class="fa fa-search"></i>
-					</a>
-			</div>
-		</form>
-		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-			<a href="signup.html" class="btn btn-primary" id="signup">
-					Signup
-			</a>
-			<a class="nav-link btn btn-primary" href="shopping-cart.html">
-					<i class="fa fa-shopping-cart mr-1"></i>
-			</a>
-		</div>
-		</div>
-	</nav>
+	<?php
+    include ("partials/navibar.php");
+    ?>
 
 	<!--filter & sort by-->
 	<section class="shop-filter">
@@ -165,15 +106,11 @@
 	</section>
 
 	<!--Footer-->
-	<footer class="footer py-5">
-		<div class="container">
-			<p class="copyright"> ©2021 Hongxin, Wenwen and Xiaomeng. All rights reserved.<br> All the pictures are from https://www.pexels.com</p>
-		</div>
-	</footer>
+    <?php
+    include ("partials/footer.php");
+    ?>
 
 	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
 	<script src="js/result.js"></script>
 	
 </body>

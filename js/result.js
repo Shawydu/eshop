@@ -145,7 +145,7 @@ window.onload = function (){
 	}else{
 		let productSection = document.querySelector(".row");
 		for (let i = 0; i < subArray.length; i++) {
-			createProduct(productSection, subArray[i], "product.html");
+			createProduct(productSection, subArray[i], "product.php");
 		
 		}
 	}
@@ -163,7 +163,7 @@ function createProduct(parent, product) {
 	div1.setAttribute("class", "mb-3 pics");
 
 	let a = document.createElement("a");
-	a.href = "product.html?id=" + product.id;
+	a.href = "product.php?id=" + product.id;
 	
 
 	let image = document.createElement("img");
@@ -221,7 +221,7 @@ function reCreateProduct(newArr){
 	} finally { //Dynamically generate products in result html by filter
 		let productSection = document.querySelector(".row");
 		for (let i = 0; i < newArr.length; i++) {
-			createProduct(productSection, newArr[i], "product.html");				
+			createProduct(productSection, newArr[i], "product.php");				
 		}			
 	}	
 }
@@ -343,8 +343,8 @@ for (const ratingFilter of ratingFilters) {
 
 //search bar function
 const page = {
-	PRODUCT: "product.html",
-	RESULT: "result.html",
+	PRODUCT: "product.php",
+	RESULT: "result.php",
 };
 function registeEvent(){
     document.querySelector(".btn_search").addEventListener('click', function () { searchItem(this); });
