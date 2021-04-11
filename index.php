@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-include ("partials/head.php");
+include "partials/head.php";
 ?>
 
 <body>
@@ -13,7 +13,7 @@ include ("partials/head.php");
         code reference: https://getbootstrap.com/docs/4.3/components/navbar/?
     -->
     <?php
-    include ("partials/navibar.php");
+    include "partials/navibar.php";
     ?>
 
     <!--Home screen-->
@@ -89,8 +89,8 @@ include ("partials/head.php");
 
     <!--Footer-->
     <?php
-    include ("partials/footer.php");
-    ?>
+include "partials/footer.php";
+?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
