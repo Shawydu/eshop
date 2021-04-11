@@ -25,21 +25,6 @@
         default:
             http_response_code(500);
             echo "Unknown operation!";
-
     }
 
-    function queryAllProducts(){
-        $products = new Products;
-        echo $products->getAllProducts();
-    }
-
-    function queryProductByID($id){
-        $products = new Products;
-        echo $products->getProductById($id);
-    }
-
-    function insertProduct($id, $title, $description, $price, $rating, $img, $category){
-        $products = new Products;
-        $products->saveProduct(1,2,3,4,5,6,7);
-    }
 ?>
