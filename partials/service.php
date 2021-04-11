@@ -18,12 +18,14 @@
             break;
         // insert a product into mysql
         case 3: 
-            // var_dump($data->pData);
             $products->saveProduct($data->pData->id, $data->pData->title, $data->pData->description, $data->pData->price, $data->pData->rating, 
                                    $data->pData->img, $data->pData->category);
             break;
+        case 4: 
+            echo $products->getProductByWords($data->searchWord);
+            break;
         default:
-            http_response_code(500);
+            http_response_code(400); // response bad request
             echo "Unknown operation!";
     }
 

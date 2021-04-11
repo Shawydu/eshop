@@ -147,6 +147,11 @@ function getProductsFromService(){
     //     id: 3 
     // };
 
+    // sample for get product by search words -- xiaomeng 
+    // const reqData = {
+    //     optType: 4,
+    //     searchWord: "Cotton" 
+    // };
 
     //sample for insert data   --wenwen 
     // const reqData = {
