@@ -137,9 +137,9 @@ function getProductsFromService(){
     };
 
     
-    // const reqData = {
-    //     optType: 1 // optType 1 - get all products
-    // };
+    const reqData = {
+        optType: 1 // optType 1 - get all products
+    };
 
     // sample for get product by ID -- wenwen 
     // const reqData = {
