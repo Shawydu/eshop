@@ -137,9 +137,9 @@ function getProductsFromService(){
     };
 
     
-    const reqData = {
-        optType: 1 // optType 1 - get all products
-    };
+    // const reqData = {
+    //     optType: 1 // optType 1 - get all products
+    // };
 
     // sample for get product by ID -- wenwen 
     // const reqData = {
@@ -150,7 +150,7 @@ function getProductsFromService(){
     // sample for get product by search words -- xiaomeng 
     // const reqData = {
     //     optType: 4,
-    //     searchWord: "Cotton" 
+    //     searchWord: "cotton" 
     // };
 
     //sample for insert data   --wenwen 
@@ -225,10 +225,7 @@ function clickSearchBox(object){
  */
 function loadProducts() {
     let productSection = document.querySelector(".products");
-    // for (let i = 0; i < productList.length; i++) {
-    //     createProduct(productSection, productList[i]);
-    // }    
-    
+
     for (let i = 0; i < window.productList.length; i++) {
         createProduct(productSection, window.productList[i]);
     }

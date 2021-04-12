@@ -21,6 +21,7 @@
             $products->saveProduct($data->pData->id, $data->pData->title, $data->pData->description, $data->pData->price, $data->pData->rating, 
                                    $data->pData->img, $data->pData->category);
             break;
+        // get products by fuzzy searching
         case 4: 
             echo $products->getProductByWords($data->searchWord);
             break;
