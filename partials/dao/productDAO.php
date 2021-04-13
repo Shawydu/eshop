@@ -19,29 +19,35 @@ class productDAO extends Dbeshop{
     }
 
     public function createProduct($product) {
-        $query = 'INSERT INTO products (title,description,price,rating,category,img) VALUES(?,?,?,?,?,?)';
-        $stmt = $this->connect()->prepare($query);
-        if($stmt) {
-            $title = $product->title;
-            $description = $product->description;
-            $price = $product->price;
-            $rating = $product->rating;
-            $category = $product->category;
-            $image = $product->img;
-            $stmt->bindParam(1, $title);
-            $stmt->bindParam(2, $description);
-            $stmt->bindParam(3, $price);
-            $stmt->bindParam(4, $rating);
-            $stmt->bindParam(5, $category);
-            $stmt->bindParam(6, $image);
-            //Execute the statement
-            $success = $stmt->execute();         
-                    
-            if(!$success){
-                return $title . ' failed to create';
-            } else {
-                return $title . ' added successfully!';
-            } 
+        $dbh = $this->connect();
+        try{
+            $query = 'INSERT INTO products (title,description,price,rating,category,img) VALUES(?,?,?,?,?,?)';
+            $stmt = $dbh->prepare($query);
+            if($stmt) {
+                $title = $product->title;
+                $description = $product->description;
+                $price = $product->price;
+                $rating = $product->rating;
+                $category = $product->category;
+                $image = $product->img;
+                $stmt->bindParam(1, $title);
+                $stmt->bindParam(2, $description);
+                $stmt->bindParam(3, $price);
+                $stmt->bindParam(4, $rating);
+                $stmt->bindParam(5, $category);
+                $stmt->bindParam(6, $image);
+                //Execute the statement
+                $success = $stmt->execute();
+                // $dbh->commit();         
+            }            
+           
+            $id = $dbh->lastInsertId();
+            $product = new product($id, $title, $description, $price, $rating, $image, $category);
+            return $product;
+            
+        } catch( PDOException $e) {
+            // $dbh->rollBack();
+            return "Error: " . $e.getMessage();
         }
     }
 }

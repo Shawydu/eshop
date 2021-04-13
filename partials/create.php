@@ -24,6 +24,22 @@ $input_category = trim($_POST["category"]);
 $productDAO = new productDAO();
 $product = new product(3, $input_title, $input_description, $input_price, $input_rating, $input_image, $input_category);
 $result = $productDAO->createProduct($product);
+if($result) {
+    $product_item=array(
+        "id" => $result->id,
+        "title" => $result->title,
+        "description" => $result->description,
+        "price" => $result->price,
+        "category" => $result->category,
+        "rating" => $result->rating,
+        "img" => $result->img
+    );
 
-echo $result;
+    http_response_code(200);
+    echo json_encode($product_item);
+} else {
+    http_response_code(400);
+    echo "failed to create product";
+}
+
 ?>

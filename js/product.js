@@ -39,24 +39,14 @@ var createProduct = (e) => {
     formData.append('image', $("#image")[0].files[0]);
     let request = new XMLHttpRequest();
     request.open('POST', 'partials/create.php');
+    request.onreadystatechange = function() {
+        if(this.readyState == XMLHttpRequest.DONE && this.status == 200) {
+            const product = JSON.parse(this.responseText);
+            const redirectPath = 'product.php?id=' + product.id;
+            window.location.replace(redirectPath);
+        } else {
+            $('#errorMessage').text(this.responseText);
+        }
+    }
     request.send(formData);
 }
-// var create = () => {
-//     const title = $("#title").val(); //update the product title
-//     const description = $("#description").val(); //update the product description
-//     const price = $("#price").val(); //update the product price
-//     const category = $("#category").val();
-//     const image = $("#image")[0].files[0];
-    
-//     $('createProduct')
-//     const payload = {
-//         title,
-//         description,
-//         price,
-//         category,
-//         image
-//     }
-//     $.post("create.php", payload);
-// }
-
-

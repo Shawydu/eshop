@@ -54,6 +54,7 @@
             <div class="btn-group">
                 <button type="submit" class="btn btn-primary">Create</button>
                 <a href="index.html" class="btn btn-danger">Cancel</a>
+                <p id="errorMessage"></p>
             </div>
           </form>
     </div>
